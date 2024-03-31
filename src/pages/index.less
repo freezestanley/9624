@@ -1,0 +1,166 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.home{
+    background: url('../assets/bb.jpg') no-repeat, url('../assets/bg1.png') no-repeat;
+    background-position: top left,bottom left;
+    background-size:100%, 100%;
+    position: relative;
+}
+.retitle{
+    color:#333;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: .5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.title{
+    color:#333;
+    font-size: .6rem;
+    text-align: center;
+    font-weight: bold;
+}
+.logo{
+    display: block;
+    margin: 1rem auto .5rem;
+    text-align: center;
+}
+.desc{
+    font-size: .4rem;
+    color:#666;
+    margin: .4rem .6rem;
+    text-indent: .8rem;
+    & > b{
+        color:#000;
+    }
+}
+.title1{
+    color:#333;
+    font-size: .4rem;
+    text-align: center;
+    font-weight: bold;
+}
+.title2{
+    color:#444;
+    font-size: .35rem;
+    text-align: center;
+}
+.box{
+    background: url('../assets/bg.png') no-repeat;
+    background-position: center center;
+    color: #444;
+    text-align: center;
+    height: 400px;
+    width: 80%;
+    margin: 40px auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-size: 60%;
+    & > h1 {
+        color: #000;
+        font-size: .5rem;
+    }
+    & > .txt{
+        color: #444;
+        font-size: .4rem;
+    }
+}
+.box1{
+    text-align: center;
+    font-size: .35rem;
+}
+.icp{
+    font-size: .35rem;
+    color:#000;
+    text-align: center;
+    margin: 20px 0 40px;
+}
+.list{
+    margin: 30px 60px 200px;
+    & > dl{
+        margin:  0 30px 60px 90px;
+        padding: 0;
+        & > dt{
+            color:#000;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            &::before{
+                content: " ";
+                background: url('../assets/icon.png') no-repeat;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-size: 100%;
+                left: -60px;
+            }
+        }
+        &>dd{
+            color:#666;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+    }
+}
+.zhushou{
+    position: fixed;
+    width: 230px;
+    height: 50px;
+    border-radius: 100px 0 0 100px;
+    padding: 20px;
+    box-shadow: 1px 1px 2px #000;
+    font-size: 30px;
+    right:0;
+    bottom:100px;
+    background: #f0ffce;
+    z-index: 99;
+    &::before{
+        content: " ";
+        background: url('../assets/ren.png') no-repeat;
+        background-size: 100%;
+        width: 80px;
+        height: 80px;
+        display: inline-block;
+        transform: translate(0PX, -9PX);
+        border-radius: 99px;
+    }
+    & > b{
+        display: block;
+        position: absolute;
+        top: 5PX;
+        right: 30PX;
+        font-size: 30px;
+        font-weight: lighter;
+        color:#000;
+    }
+}
+.formtitle{
+    font-size: .35rem;
+    margin-bottom: 10px;
+}
+.line{
+    color:#000;
+    font-size: .4rem;
+    margin: 0 0 20px;
+    & > b{
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+    }
+    & > input{
+        border: 1px solid #333;
+        border-radius: 99px;
+        line-height: 80px;
+        height: 50px;
+        width: 90%;
+        padding:20px;
+    }
+}
+.submit{border-radius: 99px; height: 100px; line-height: 99px; background-color: #5fa5fa;
+color:#fff; display: block;width: 100%; box-shadow: none; border: none;
+font-size: 30px;}
+.close{color:#000; font-size: .35rem; position: absolute;top: 15px;
+    right: 20px;}
