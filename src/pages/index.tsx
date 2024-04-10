@@ -19,7 +19,7 @@ export default function HomePage() {
   const onFinish = (values: any) => {
     return 
   }
-  const [visible1, setVisible1] = useState(true)
+  const [visible1, setVisible1] = useState(false)
   const [visible2, setVisible2] = useState(false)
   return (
     <div className={style.home}>
